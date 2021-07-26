@@ -38,6 +38,7 @@ impl AppchainNativeToken {
         this
     }
 
+    #[payable]
     pub fn mint(&mut self, account_id: ValidAccountId, amount: U128) {
         self.assert_owner();
         self.storage_deposit(Some(account_id.clone()), None);
