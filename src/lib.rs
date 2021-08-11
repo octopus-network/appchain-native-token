@@ -47,6 +47,7 @@ impl AppchainNativeToken {
     }
 
     pub fn burn(&mut self, account_id: ValidAccountId, amount: U128) {
+        self.assert_owner();
         self.token
             .internal_withdraw(account_id.as_ref(), amount.into());
     }
