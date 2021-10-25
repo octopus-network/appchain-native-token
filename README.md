@@ -1,3 +1,4 @@
+*moved to https://github.com/octopus-network/wrapped-appchain-token*
 ## Building
 
 To build run:
